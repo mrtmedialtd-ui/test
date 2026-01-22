@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MRTMedia | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="index.html">MRTMedia</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Services</button>
+          <div class="dropdown-content">
+            <a href="services.html#digital-strategy">Digital Strategy</a>
+            <a href="services.html#web-development">Web Development</a>
+            <a href="services.html#design">Design</a>
+            <a href="services.html#growth">Growth</a>
+            <a href="services.html#support">Support</a>
+          </div>
+        </div>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">Resources</button>
+          <div class="dropdown-content">
+            <a href="resources.html#blog">Blog</a>
+            <a href="resources.html#guides">Guides</a>
+            <a href="resources.html#newsletter">Newsletter</a>
+            <a href="resources.html#events">Events</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Get In Touch</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s build your next digital milestone</h1>
+        <p class="subheadline">Tell us about your goals and we’ll respond within one business day.</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <form class="contact-form">
+        <div class="form-row">
+          <label>
+            Company name
+            <input type="text" name="company" placeholder="Company name" />
+          </label>
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Full name" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Email address" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="Phone number" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Service interest
+            <select name="service">
+              <option>Digital Strategy</option>
+              <option>Web Development</option>
+              <option>Design</option>
+              <option>Growth</option>
+              <option>Support</option>
+            </select>
+          </label>
+          <label>
+            Budget range
+            <select name="budget">
+              <option>$10k - $25k</option>
+              <option>$25k - $50k</option>
+              <option>$50k - $100k</option>
+              <option>$100k+</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          Project details
+          <textarea name="details" rows="4" placeholder="Tell us about your goals, timeline, and challenges."></textarea>
+        </label>
+        <label>
+          How did you find us?
+          <input type="text" name="referral" placeholder="Referral, search, event, etc." />
+        </label>
+        <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+      </form>
+
+      <div class="contact-info">
+        <h2>Contact information</h2>
+        <p><strong>Phone:</strong> +1 (312) 555-0198</p>
+        <p><strong>Email:</strong> hello@mrtmedia.com</p>
+        <p><strong>Office:</strong> 221 Market Street, Suite 540, San Francisco, CA</p>
+        <div class="map-embed">
+          <iframe
+            title="MRTMedia Office Map"
+            src="https://maps.google.com/maps?q=San%20Francisco%20Market%20Street&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>MRTMedia</h3>
+        <p>Transforming Digital Experiences</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com" aria-label="LinkedIn">in</a>
+          <a href="https://www.instagram.com" aria-label="Instagram">ig</a>
+          <a href="https://www.behance.net" aria-label="Behance">be</a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#digital-strategy">Digital Strategy</a></li>
+          <li><a href="services.html#web-development">Web Development</a></li>
+          <li><a href="services.html#design">Design</a></li>
+          <li><a href="services.html#growth">Growth</a></li>
+          <li><a href="services.html#support">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>hello@mrtmedia.com</li>
+          <li>+1 (312) 555-0198</li>
+          <li>221 Market Street, Suite 540<br />San Francisco, CA</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p>Monthly insights on digital growth.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email address" />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 MRTMedia. All rights reserved.</span>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
