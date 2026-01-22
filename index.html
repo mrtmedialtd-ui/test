@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MRT Media | Creative Studio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #0f1115;
+      --surface: #141824;
+      --primary: #f5d36b;
+      --accent: #7bd3d6;
+      --text: #f7f7f7;
+      --muted: #c8c8c8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8vw;
+      position: sticky;
+      top: 0;
+      background: rgba(15, 17, 21, 0.9);
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    nav a {
+      color: var(--muted);
+      margin-left: 24px;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 48px;
+      align-items: center;
+      padding: 80px 8vw;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin-top: 18px;
+      max-width: 520px;
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 14px 28px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      text-decoration: none;
+      color: #0f1115;
+      background: var(--primary);
+      box-shadow: 0 16px 30px rgba(245, 211, 107, 0.25);
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--text);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-card {
+      background: var(--surface);
+      padding: 32px;
+      border-radius: 24px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .hero-card h3 {
+      font-size: 1.2rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      padding: 8px 14px;
+      background: rgba(123, 211, 214, 0.15);
+      color: var(--accent);
+      border-radius: 999px;
+    }
+
+    section {
+      padding: 64px 8vw;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+
+    .card {
+      background: var(--surface);
+      padding: 28px;
+      border-radius: 20px;
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .stats {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    footer {
+      padding: 40px 8vw;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media (max-width: 720px) {
+      nav {
+        display: none;
+      }
+      header {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MRT MEDIA</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="badge">Creative studio for bold brands</span>
+        <h1>We craft standout digital experiences that feel effortless.</h1>
+        <p>
+          MRT Media partners with growing teams to launch, rebrand, and scale.
+          Strategy, design, and production — all handled in one place.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Start a project</a>
+          <a class="button secondary" href="#work">View latest work</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Recent launch highlights</h3>
+        <div>
+          <strong>Vibe Commerce</strong>
+          <p>Full e-commerce overhaul with immersive product storytelling.</p>
+        </div>
+        <div>
+          <strong>Nova Fitness</strong>
+          <p>Membership platform and brand identity refresh in 6 weeks.</p>
+        </div>
+        <div>
+          <strong>Signal AI</strong>
+          <p>Landing page, motion graphics, and GTM assets.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Services built for momentum</h2>
+      <div class="grid">
+        <div class="card">
+          <h4>Brand Strategy</h4>
+          <p>Positioning, messaging, and visual systems designed for clarity.</p>
+        </div>
+        <div class="card">
+          <h4>Web Design</h4>
+          <p>High-converting sites with art direction and responsive layouts.</p>
+        </div>
+        <div class="card">
+          <h4>Content Production</h4>
+          <p>Photo, video, and motion that elevate every launch moment.</p>
+        </div>
+        <div class="card">
+          <h4>Growth Assets</h4>
+          <p>Campaign creative, social kits, and always-on marketing support.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 class="section-title">Projects we are proud of</h2>
+      <div class="grid">
+        <div class="card">
+          <h4>Helio Interiors</h4>
+          <p>Luxury showcase site with editorial storytelling.</p>
+        </div>
+        <div class="card">
+          <h4>Lumen Tech</h4>
+          <p>Interactive product demo and pricing experience.</p>
+        </div>
+        <div class="card">
+          <h4>Atlas Venture</h4>
+          <p>Investor portal and rebrand rollout.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">A small team with global reach</h2>
+      <p>
+        We are a multidisciplinary crew of designers, strategists, and producers.
+        From initial discovery to launch support, we keep every detail aligned.
+      </p>
+      <div class="stats" style="margin-top: 24px;">
+        <div>
+          <div class="stat">120+</div>
+          <div>projects delivered</div>
+        </div>
+        <div>
+          <div class="stat">12</div>
+          <div>countries served</div>
+        </div>
+        <div>
+          <div class="stat">8</div>
+          <div>years in business</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Let’s build something remarkable</h2>
+      <div class="grid">
+        <div class="card">
+          <h4>Project inquiries</h4>
+          <p>Email us at <strong>hello@mrtmedia.com</strong> or book a call.</p>
+        </div>
+        <div class="card">
+          <h4>Studio</h4>
+          <p>London · Dubai · New York</p>
+        </div>
+        <div class="card">
+          <h4>Availability</h4>
+          <p>Currently accepting projects for Q3 and Q4.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>MRT Media © 2024</div>
+    <div>Design, strategy, and production for ambitious brands.</div>
+  </footer>
+</body>
+</html>
