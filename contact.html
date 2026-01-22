@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact MRTMedia</title>
+    <meta name="description" content="Start a project with MRTMedia." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site">
+      <header class="topbar">
+        <a class="logo" href="index.html">MRTMedia</a>
+        <div class="topbar-actions">
+          <a class="call-chip" href="tel:+18005551234">Call</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </button>
+        </div>
+      </header>
+
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-panel">
+          <nav class="mobile-nav">
+            <a href="services.html">Services</a>
+            <details>
+              <summary>Services</summary>
+              <div class="accordion-links">
+                <a href="services.html#strategy">Strategy</a>
+                <a href="services.html#web-development">Web Development</a>
+                <a href="services.html#design">Design</a>
+                <a href="services.html#growth">Growth</a>
+                <a href="services.html#support">Support</a>
+              </div>
+            </details>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <details>
+              <summary>Resources</summary>
+              <div class="accordion-links">
+                <a href="resources.html">Insights</a>
+                <a href="resources.html#guides">Guides</a>
+                <a href="resources.html#newsletter">Newsletter</a>
+              </div>
+            </details>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="mobile-menu-cta">
+            <a class="btn primary" href="contact.html">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section class="page-hero">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s build your next win.</h1>
+          <p class="subhead">Share a few details and we’ll follow up with a clear plan.</p>
+        </section>
+
+        <section class="contact-grid">
+          <form class="contact-form">
+            <div class="form-step">
+              <h2>Step 1: Contact</h2>
+              <label>
+                Full name
+                <input type="text" placeholder="Your name" />
+              </label>
+              <label>
+                Email address
+                <input type="email" placeholder="you@email.com" />
+              </label>
+              <label>
+                Company
+                <input type="text" placeholder="Company name" />
+              </label>
+            </div>
+
+            <div class="form-step">
+              <h2>Step 2: Project</h2>
+              <label>
+                Service interest
+                <select>
+                  <option>Strategy</option>
+                  <option>Design</option>
+                  <option>Web Development</option>
+                  <option>Growth Marketing</option>
+                  <option>Support</option>
+                </select>
+              </label>
+              <label>
+                Budget range
+                <select>
+                  <option>$10k–$25k</option>
+                  <option>$25k–$50k</option>
+                  <option>$50k–$100k</option>
+                  <option>$100k+</option>
+                </select>
+              </label>
+              <label>
+                Project goals
+                <textarea rows="4" placeholder="Tell us about your goals"></textarea>
+              </label>
+            </div>
+
+            <button class="btn primary" type="submit">Submit Project</button>
+            <p class="form-note">What happens next: We review within 24 hours and schedule a discovery call.</p>
+          </form>
+
+          <aside class="contact-aside">
+            <div class="card">
+              <h3>Quick connect</h3>
+              <p>Prefer to talk? Call or message directly.</p>
+              <a class="btn secondary" href="tel:+18005551234">Click to Call</a>
+              <a class="btn ghost" href="https://wa.me/18005551234" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+            <div class="card">
+              <h3>Office</h3>
+              <p>412 Hudson Street, New York, NY</p>
+              <a class="text-link" href="https://maps.google.com" target="_blank" rel="noreferrer">Open map</a>
+            </div>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="footer compact">
+        <div class="footer-meta">
+          <p>© 2025 MRTMedia. All rights reserved.</p>
+          <div>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

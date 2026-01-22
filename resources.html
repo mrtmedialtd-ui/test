@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MRTMedia Resources</title>
+    <meta name="description" content="Insights, guides, and resources from MRTMedia." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site">
+      <header class="topbar">
+        <a class="logo" href="index.html">MRTMedia</a>
+        <div class="topbar-actions">
+          <a class="call-chip" href="tel:+18005551234">Call</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </button>
+        </div>
+      </header>
+
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-panel">
+          <nav class="mobile-nav">
+            <a href="services.html">Services</a>
+            <details>
+              <summary>Services</summary>
+              <div class="accordion-links">
+                <a href="services.html#strategy">Strategy</a>
+                <a href="services.html#web-development">Web Development</a>
+                <a href="services.html#design">Design</a>
+                <a href="services.html#growth">Growth</a>
+                <a href="services.html#support">Support</a>
+              </div>
+            </details>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <details open>
+              <summary>Resources</summary>
+              <div class="accordion-links">
+                <a href="#featured">Insights</a>
+                <a href="#guides">Guides</a>
+                <a href="#newsletter">Newsletter</a>
+              </div>
+            </details>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="mobile-menu-cta">
+            <a class="btn primary" href="contact.html">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section class="page-hero" id="featured">
+          <p class="eyebrow">Resources</p>
+          <h1>Ideas that sharpen growth.</h1>
+          <p class="subhead">Editorial insights and guides built for busy teams.</p>
+        </section>
+
+        <section class="featured-article">
+          <div class="thumb"></div>
+          <div>
+            <span class="tag">Featured</span>
+            <h2>The modern performance site checklist</h2>
+            <p>Seven steps to ship a fast, conversion-first experience.</p>
+            <a class="btn secondary" href="#">Read Article</a>
+          </div>
+        </section>
+
+        <section class="chips">
+          <span class="pill">UX</span>
+          <span class="pill">SEO</span>
+          <span class="pill">Paid Media</span>
+          <span class="pill">Analytics</span>
+        </section>
+
+        <section class="article-list" id="guides">
+          <article class="card">
+            <h3>How to audit a landing page</h3>
+            <p>Find friction quickly with a 30-minute mobile review.</p>
+          </article>
+          <article class="card">
+            <h3>Paid media foundations for SaaS</h3>
+            <p>Budgeting, testing, and reporting loops that scale.</p>
+          </article>
+          <article class="card">
+            <h3>Content that converts on mobile</h3>
+            <p>Short headlines and proof architecture for trust.</p>
+          </article>
+        </section>
+
+        <section class="gated-guide">
+          <div>
+            <h2>Guide: 2025 Growth Systems</h2>
+            <p>Download the playbook for faster acquisition and retention.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email address" aria-label="Email address" />
+            <button type="submit" class="btn primary">Get the Guide</button>
+          </form>
+        </section>
+
+        <section class="sticky-newsletter" id="newsletter">
+          <h2>Stay in the loop</h2>
+          <p>Weekly clarity on performance and UX.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email address" aria-label="Email address" />
+            <button type="submit" class="btn secondary">Join Newsletter</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer compact">
+        <div class="footer-meta">
+          <p>© 2025 MRTMedia. All rights reserved.</p>
+          <div>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
